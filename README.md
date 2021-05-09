@@ -10,7 +10,7 @@ changing `OPENWEATHERMAP_API_KEY` inside `settings.py`.
 
 ![INDEX](gh_screenshots/weatherize.png)
 
-##Installation
+## Installation
 Step 1: Cloning the repository
 ```bash
 git clone https://github.com/kevinkosterr/django-weatherize.git django_weatherize
