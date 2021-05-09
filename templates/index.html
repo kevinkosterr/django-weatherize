@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% include 'components/search_location.component.html' %}
+
+    <div class="container">
+
+        <div class="section">
+            <div class="row">
+                <div class="col s6 m4">
+
+                    <div class="card-panel grey lighten-5 z-depth-1 small">
+                        <div class="row valign-wrapper">
+                            <div class="col s3">
+                                <img src="https://openweathermap.org/img/w/{{ current_weather.weather.0.icon }}.png" alt=""
+                                     class="responsive-img valign weather-icon">
+                            </div>
+                            <div class="col s9">
+                                <p>Current weather in {{ current_weather.name }}, {{ current_weather.sys.country }}</p>
+                                <h4>{{ current_weather.main.temp }} &deg;C</h4>
+                                <p>{{ current_weather.weather.0.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- left column -->
+
+                <div class="col s6 m5">
+
+                    <div class="card-panel grey lighten-5 z-depth-1 small">
+                        <h5>Details</h5>
+                        <div class="row">
+                            <div class="col s12 m6">
+                                <ul>
+                                    <li class="weather-detail">Feels like: {{ current_weather.main.feels_like }}&deg;C</li>
+                                    <li class="weather-detail">Min. Temperature:
+                                        {{ current_weather.main.temp_min }}&deg;C
+                                    </li>
+                                    <li class="weather-detail">Max. Temperature:
+                                        {{ current_weather.main.temp_max }}&deg;C
+                                    </li>
+                                    <li class="weather-detail">Humidity: {{ current_weather.main.humidity }}&percnt;</li>
+                                    <li class="weather-detail">Windspeed: {{ current_weather.wind.speed }} km/h</li>
+                                </ul>
+                            </div>
+                            <div class="col s12 m6">
+                                <i class="material-icons details-icon">filter_drama</i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- middle column -->
+
+                <div class="col s12 m3">
+                    <div class="card-panel">
+                         <h5>Made with</h5>
+                        <ul>
+                            <li><a href="https://www.djangoproject.com/" target="_blank">Django</a></li>
+                            <li><a href="https://materializecss.com" target="_blank">Materialize CSS</a></li>
+                            <li><a href="https://openweathermap.org/api" target="_blank">Openweathermap API</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- right column -->
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+

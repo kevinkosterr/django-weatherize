@@ -1,0 +1,41 @@
+p, h1, h2, h3, h4, h5, ul, li, input{
+    font-family: Roboto, sans-serif;
+}
+
+.nav-wrapper a, li{
+    color: grey !important;
+}
+
+.name{
+    font-weight: bold !important;
+}
+
+.search_loc_weather{
+    background-image: url("../../media/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 65%;
+    min-height: 65%;
+}
+
+.search-field{
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+.search-input{
+    border-bottom: none !important;
+}
+
+.weather-icon {
+    width: 150px;
+}
+
+.details-icon{
+    font-size: 100px;
+}
+
+body{
+    background-color: #e0e0e0;
+}
