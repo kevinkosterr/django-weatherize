@@ -3,7 +3,7 @@ Weatherize is a very simple django web-application
 for checking the current weather in a city. This web-application does not 
 use any database. It simply uses the API of [Openweathermap](https://openweathermap.org/api) upon a request.
 
-I chose Materialize CSS as CSS framework for a clean and simplistic look. 
+I chose [Materialize CSS](https://materializecss.com) as CSS framework for a clean and simplistic look. 
 Upon trying this web-application, you need to provide your own API KEY from 
 [Openweathermap](https://openweathermap.org/api). This can easily be done by
 changing `OPENWEATHERMAP_API_KEY` inside `settings.py`.
