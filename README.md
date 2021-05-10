@@ -8,7 +8,7 @@ Upon trying this web-application, you need to provide your own API KEY from
 [Openweathermap](https://openweathermap.org/api). This can easily be done by
 changing `OPENWEATHERMAP_API_KEY` inside `settings.py`.
 
-![INDEX](gh_screenshots/weatherize.png)
+![INDEX](django_weatherize/gh_screenshots/weatherize.png)
 
 ## Installation
 Step 1: Cloning the repository
@@ -18,7 +18,7 @@ git clone https://github.com/kevinkosterr/django-weatherize.git django_weatheriz
 
 Step 2: Creating a virtual environment
 ```bash
-cd django_weatherize
+cd django_weatherize\django_weatherize
 python -m virtualenv venv
 ```
 
