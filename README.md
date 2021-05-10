@@ -8,7 +8,7 @@ Upon trying this web-application, you need to provide your own API KEY from
 [Openweathermap](https://openweathermap.org/api). This can easily be done by
 changing `OPENWEATHERMAP_API_KEY` inside `settings.py`.
 
-![INDEX](gh_screenshots/weatherize.png)
+![INDEX](screenshots/weatherize.png)
 
 ## Installation
 Step 1: Cloning the repository
